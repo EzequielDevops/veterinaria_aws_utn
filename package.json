@@ -1,0 +1,15 @@
+{
+  "name": "turnos-veterinaria-crud",
+  "version": "1.0.0",
+  "description": "CRUD serverless de turnos para veterinarias — demo de charla UTN Community Day",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "lint": "node --check src/handlers/createTurno.js && node --check src/handlers/getTurno.js && node --check src/handlers/listTurnos.js && node --check src/handlers/updateTurno.js && node --check src/handlers/deleteTurno.js && node --check src/lib/dynamo.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.650.0",
+    "@aws-sdk/lib-dynamodb": "^3.650.0",
+    "@aws-sdk/util-dynamodb": "^3.650.0"
+  }
+}
